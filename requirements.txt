@@ -1,0 +1,5 @@
+pandas
+mplsoccer
+numpy
+matplotlib.pyplot
+math
