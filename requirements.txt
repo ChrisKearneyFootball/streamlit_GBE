@@ -1,5 +1,7 @@
-pandas
-mplsoccer
-numpy
-matplotlib
-math
+pandas==2.2.3
+mplsoccer==1.5.1
+numpy==1.26.4
+matplotlib==3.9.2
+scipy==1.14.1
+pillow
+streamlit
