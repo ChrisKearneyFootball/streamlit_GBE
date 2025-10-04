@@ -239,7 +239,7 @@ with tab2:
         ]
     )
 
-    logo = mpimg.imread("Capture.png")
+    logo = mpimg.imread("Capture.PNG")
     add_image(logo, fig, left=0.82, bottom=0.02, width=0.15, height=0.08)
 
     plot_width = 80  # change manually here
