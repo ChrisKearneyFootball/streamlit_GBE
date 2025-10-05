@@ -153,8 +153,8 @@ CUSTOM_METRIC_NAMES = {
 # =========================
 # STREAMLIT APP
 # =========================
-st.title("⚽ Expert GBE Hub Dashboard")
-tab1, tab2 = st.tabs(["📊 Player Ratings", "🍕 Pizza Plot"])
+st.title("⚽ GBE Expert Hub Dashboard")
+tab1, tab2 = st.tabs(["📊 Player Ratings", "Radar Plot"])
 
 # ========== TAB 1 ==========
 with tab1:
@@ -336,6 +336,7 @@ with tab2:
         pass
 
     st.pyplot(fig, use_container_width=False, width=80)
+
 
 
 
