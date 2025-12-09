@@ -128,7 +128,7 @@ CUSTOM_METRIC_NAMES = {
     'Shots on target, %': 'Shots on\ntarget, %',
     'Goal conversion, %': 'Goal\nconversion, %',
     'Progressive runs per 90': 'Progressive\nruns per 90',
-    'Successful dribbles': 'Successful\ndribbles',
+    'Successful dribbles': 'SUCCESSFUL DRIBBLES',
     'Offensive duels per 90': 'Offensive duels\nper 90',
     'Offensive duels won, %': 'Offensive duels\nwon, %',
     'xA per 100 passes': 'xA per\n100 passes',
@@ -159,7 +159,7 @@ tab1, tab2 = st.tabs(["📊 Player Ratings", "Radar Plot"])
 # ========== TAB 1 ==========
 with tab1:
     st.header("Player Ratings by Band & Role")
-    file_path = "combined_band_sheets.xlsx"
+    file_path = "combined_band_sheets_09-12-25.xlsx"
     sheets_dict = load_excel(file_path)
     # Rename sheets to Band 1-6
     band_names = {f"Sheet{i}": f"Band {i}" for i in range(1, 7)}
@@ -217,8 +217,7 @@ with tab1:
     elif top_n_choice == "Top 10":
         df_filtered = df_filtered.head(10)
 
-    columns_to_show = ["Band", "Player", "League", "Position", "Age", "Team", "Minutes played", role_choice]
-    st.dataframe(df_filtered[columns_to_show])
+    st.dataframe(df_filtered)
 
 # ========== TAB 2 ==========
 with tab2:
@@ -336,7 +335,6 @@ with tab2:
         pass
 
     st.pyplot(fig, use_container_width=False, width=80)
-
 
 
 
